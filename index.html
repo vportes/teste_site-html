@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Registro Site</title>
+  </head>
+  <body>
+    <header class="text-center">
+    <h1 id="title">Registro site</h1>
+    <p id="description">Exemplo de site para se registrar</p>
+    </header>
+    <form id="survey-form">
+      <label id="name-label">Nome <input id="name" type="text" placeholder="Digite seu nome" required /> </label>
+      <label id="email-label">Email <input id="email" type="email" placeholder="Digite seu email" required /> </label>
+      <label id="number-label">Idade <input id="number" type="number" min="10" max="120" placeholder="Idade" /> </label>
+      <label id="dropdown-label">O que melhor descreve sua situação atual:
+        <select id="dropdown" name="dropdown">
+          <option value:"">Selecione o que aplica</option>
+          <option value:"1">Estudante</option>
+          <option value:"2">Trabalho em tempo integral</option>
+          <option value:"3">Trabalho em meio periodo</option>
+          <option value:"4">Outro</option>
+        </select>
+      </label>
+      <label id="checkbox-label">Qual dessas opções você faz em seu tempo livre (multipla escolha):</label>
+      <label><input value="1" type="checkbox" name="checkbox" class="inline" />Ver filmes/series</label>
+      <label><input value="2" type="checkbox" name="checkbox" class="inline" />Jogar videogames</label>
+      <label><input value="3" type="checkbox" name="checkbox" class="inline" />Ler livros</label>
+      <label><input value="4" type="checkbox" name="checkbox" class="inline" />Atividades ao ar livre</label>
+      <label><input value="5" type="checkbox" name="checkbox" class="inline" />Interagir em redes sociais</label>
+      <label><input value="6" type="checkbox" name="checkbox" class="inline" />Outra</label>
+      <label id="radio-label">Gostaria de receber novidades por email?</label>
+      <label for="radio-yes"><input id="radio-yes" type="radio" name="radio" class="inline" value="1"/>Sim</label>
+      <label for="radio-no"><input id="radio-no" type="radio" name="radio" class="inline" value="2"/>Não</label>
+      <label>Algum comentário ou sugestão?</label>
+      <textarea id="textarea" name="textarea" class="textarea" placeholder="Escreva seu comentário/sugestão..."></textarea>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
